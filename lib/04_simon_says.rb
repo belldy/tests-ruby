@@ -9,13 +9,14 @@ def shout(string)
 end
 
 
-def repeat(string, n = 0)
+def repeat(string, n = 2)
 	return [string] * n * " "
 end
 
 
-def start_of_word(string, n = 0)
-	return string[0]
+def start_of_word(string, n)
+	begin_string = string[0, n]
+	return begin_string
 end
 
 
@@ -24,6 +25,5 @@ def first_word(string)
 end
 
 def titleize(string)
-	#return string.capitalize
 	return string.capitalize
 end
